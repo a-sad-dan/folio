@@ -19,6 +19,7 @@
 body {
 	color: #120e07;
 	min-height: 100vh;
+	line-height: 24px;
 	background: repeating-linear-gradient(
 			0deg,
 			transparent,
@@ -36,19 +37,20 @@ body {
 }
 @media (min-width: 768px) {
 	body {
+		line-height: 42px;
 		background: repeating-linear-gradient(
 				0deg,
 				transparent,
-				transparent 48px,
-				#ccc 48px,
-				#ccc 50px
+				transparent 40px,
+				#ccc 40px,
+				#ccc 42px
 			),
 			repeating-linear-gradient(
 				90deg,
 				transparent,
-				transparent 48px,
-				#ccc 48px,
-				#ccc 50px
+				transparent 40px,
+				#ccc 40px,
+				#ccc 42px
 			);
 	}
 }
