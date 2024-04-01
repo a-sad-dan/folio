@@ -32,6 +32,26 @@ const config: Config = {
 			bold: '700',
 		},
 	},
+	extend: {
+		keyframes: {
+			slideIn: {
+				from: {
+					transform: 'translateY(-100%)',
+				},
+				to: {
+					transform: 'translateY(0)',
+				},
+			},
+			slideOut: {
+				from: {
+					transform: 'translateY(0)',
+				},
+				to: {
+					transform: 'translateY(-100%)',
+				},
+			},
+		},
+	},
 	plugins: [],
 };
 export default config;
