@@ -8,9 +8,8 @@ import toTopIcon from '@/app/assets/Top.svg';
 import openMenu from '@/app/assets/open-Menu.svg';
 import closeMenu from '@/app/assets/close.svg';
 
-export const Nav = () => {
+const Nav = () => {
 	const [isActive, setIsActive] = useState(false);
-	const [isPhone, setIsPhone] = useState(false);
 
 	const toggleMenu = () => {
 		setIsActive(!isActive);
@@ -23,7 +22,7 @@ export const Nav = () => {
 	return (
 		<nav
 			className={clsx(
-				' bg-background/60 backdrop-blur-sm fixed bottom-0 left-0 w-full py-2 px-6 flex justify-between md:top-0 md:bottom-auto',
+				' bg-background/70 backdrop-blur-[2px] fixed bottom-0 left-0 w-full py-2 px-6 flex justify-between md:top-0 md:bottom-auto z-10',
 				{ 'flex p-6 pt-7': isActive }
 			)}
 		>
@@ -69,6 +68,7 @@ export const Nav = () => {
 					onClick={goTop}
 				>
 					<Image
+						className='mx-auto'
 						src={toTopIcon}
 						alt='To Top'
 						height={32}
@@ -92,3 +92,5 @@ export const Nav = () => {
 		</nav>
 	);
 };
+
+export default Nav;
