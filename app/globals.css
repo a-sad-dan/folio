@@ -19,21 +19,22 @@
 body {
 	color: #120e07;
 	min-height: 100vh;
-	line-height: 24px;
+	line-height: 25px;
 	background: repeating-linear-gradient(
 			0deg,
 			transparent,
 			transparent 24px,
-			#ccc 24px,
-			#ccc 26px
+			#ebebeb 24px,
+			#ebebeb 26px
 		),
 		repeating-linear-gradient(
 			90deg,
 			transparent,
 			transparent 24px,
-			#ccc 24px,
-			#ccc 26px
+			#ebebeb 24px,
+			#ebebeb 26px
 		);
+		background-position-y: -8px;
 }
 @media (min-width: 768px) {
 	body {
@@ -42,15 +43,15 @@ body {
 				0deg,
 				transparent,
 				transparent 40px,
-				#ccc 40px,
-				#ccc 42px
+				#ebebeb 40px,
+				#ebebeb 42px
 			),
 			repeating-linear-gradient(
 				90deg,
 				transparent,
 				transparent 40px,
-				#ccc 40px,
-				#ccc 42px
+				#ebebeb 40px,
+				#ebebeb 42px
 			);
 	}
 }
