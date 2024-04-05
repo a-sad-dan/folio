@@ -1,7 +1,7 @@
 'use client';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // assets import
 import toTopIcon from '@/app/assets/Top.svg';
@@ -10,13 +10,33 @@ import closeMenu from '@/app/assets/close.svg';
 
 const Nav = () => {
 	const [isActive, setIsActive] = useState(false);
+	const [visible, setVisible] = useState(false);
+
+	const toggleVisible = () => {
+		const scrolled = document.documentElement.scrollTop;
+		if (scrolled > 300) {
+			setVisible(true);
+		} else if (scrolled <= 300) {
+			setVisible(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', toggleVisible);
+		return () => {
+			window.removeEventListener('scroll', toggleVisible);
+		};
+	}, []);
 
 	const toggleMenu = () => {
 		setIsActive(!isActive);
 	};
 
 	const goTop = () => {
-		console.log('to the moon');
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
 	};
 
 	return (
@@ -34,7 +54,7 @@ const Nav = () => {
 					)}
 				>
 					<li>
-						<a href='#'>{'{a-sad-dan}'}</a>
+						<a href='#'>Home</a>
 					</li>
 					<li>
 						<a href='#'>Work</a>
@@ -62,9 +82,9 @@ const Nav = () => {
 				height={150}
 				className={clsx('absolute -bottom-2 right-10', { hidden: !isActive })}
 			/>
-			{!isActive && (
+			{!isActive && visible && (
 				<button
-					className='md:hidden '
+					className='md:hidden'
 					onClick={goTop}
 				>
 					<Image
@@ -77,7 +97,7 @@ const Nav = () => {
 				</button>
 			)}
 			<button
-				className={clsx('md:hidden', {
+				className={clsx(' ml-auto md:hidden', {
 					'absolute top-4 right-6': isActive,
 				})}
 				onClick={toggleMenu}
