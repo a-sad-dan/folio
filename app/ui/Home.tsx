@@ -6,7 +6,7 @@ import scrollDown from '@/app/assets/scroll-down.svg';
 const Home = () => {
 	return (
 		<section className='md:pt-20 space-y-8'>
-			<h2 className='text-xl font-bold pt-8 pb-3.5 text-center'>a-sad:Dan</h2>
+			<h2 className='text-xl font-bold pt-8 pb-3.5 text-center'>{`{a-sad:Dan}`}</h2>
 			<div className='space-y-1'>
 				<h3 className='font-semibold text-lg'>Who am I?</h3>
 				<p>
