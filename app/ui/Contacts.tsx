@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import danCoffee from '@/app/assets/dan-coffee.svg';
+import Clock from './components/Clock';
 
 const Contacts = () => {
 	return (
@@ -68,9 +69,7 @@ const Contacts = () => {
 					<ul>
 						<li>Based in New Delhi, India.</li>
 						<li>
-							Local Time:{' '}
-							{/* //todo - Get real time clock from API or component?? and eventually from Database*/}
-							10:30:57 Pm
+							Local Time: <Clock />
 						</li>
 					</ul>
 				</div>
