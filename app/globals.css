@@ -17,42 +17,46 @@
 }
 
 body {
+	font-size: 16px;
 	color: #120e07;
 	min-height: 100vh;
 	line-height: 25px;
-	background: repeating-linear-gradient(
+	background-image: repeating-linear-gradient(
 			0deg,
 			transparent,
 			transparent 24px,
 			#ebebeb 24px,
-			#ebebeb 26px
+			#ebebeb 25px
 		),
 		repeating-linear-gradient(
 			90deg,
 			transparent,
 			transparent 24px,
 			#ebebeb 24px,
-			#ebebeb 26px
+			#ebebeb 25px
 		);
-		background-position-y: -8px;
+	background-repeat: repeat;
 }
+
 @media (min-width: 768px) {
 	body {
+		font-size: 18px;
 		line-height: 42px;
-		background: repeating-linear-gradient(
+		background-image: repeating-linear-gradient(
 				0deg,
 				transparent,
 				transparent 40px,
 				#ebebeb 40px,
-				#ebebeb 42px
+				#ebebeb 41px
 			),
 			repeating-linear-gradient(
 				90deg,
 				transparent,
 				transparent 40px,
 				#ebebeb 40px,
-				#ebebeb 42px
+				#ebebeb 41px
 			);
+		background-repeat: repeat;
 	}
 }
 
