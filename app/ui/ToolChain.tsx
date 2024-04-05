@@ -3,7 +3,10 @@ import scrollDown from '@/app/assets/scroll-down-2.svg';
 
 const ToolChain = () => {
 	return (
-		<section className='space-y-7'>
+		<section
+			className='space-y-7'
+			id='ToolChain'
+		>
 			<div>
 				<h2 className='text-xl font-bold pt-8 pb-3.5 text-center'>ToolChain</h2>
 				<p className='text-base text-center'>Featuring my Daily Drivers</p>

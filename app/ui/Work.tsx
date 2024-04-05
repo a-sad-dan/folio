@@ -6,7 +6,7 @@ import calculator from '@/app/assets/mockups/calculator-green.png';
 
 const Work = () => {
 	return (
-		<section className='space-y-8 mx-auto w-max'>
+		<section className='space-y-8 mx-auto w-max' id='Work'>
 			<div>
 				<h2 className='text-xl font-bold pt-8 pb-3.5 text-center'>Work</h2>
 				<p className='text-base text-center'>Selected Works</p>

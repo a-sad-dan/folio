@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import toTopIcon from '@/app/assets/Top.svg';
 import openMenu from '@/app/assets/open-Menu.svg';
 import closeMenu from '@/app/assets/close.svg';
+import Link from 'next/link';
 
 const Nav = () => {
 	const [isActive, setIsActive] = useState(false);
@@ -54,23 +55,24 @@ const Nav = () => {
 					)}
 				>
 					<li>
-						<a href='#'>Home</a>
+						<a href='#Home'>Home</a>
 					</li>
 					<li>
-						<a href='#'>Work</a>
+						<a href='#Work'>Work</a>
 					</li>
 					<li>
-						<a href='#'>ToolChain</a>
+						<a href='#Toolchain'>ToolChain</a>
 					</li>
 					<li>
-						<a href='#'>Contact</a>
+						<a href='#Contacts'>Contact</a>
 					</li>
 					<li>
 						<a
 							className='md:underline md:underline-offset-2'
-							href='#'
+							href='/a-sad-dan-resume.pdf'
+							download={true}
 						>
-							Resume.pdf
+							{'Resume.pdf'}
 						</a>
 					</li>
 				</ul>

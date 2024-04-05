@@ -4,7 +4,10 @@ import Clock from './components/Clock';
 
 const Contacts = () => {
 	return (
-		<section className='space-y-7'>
+		<section
+			className='space-y-7'
+			id='Contacts'
+		>
 			<div>
 				<h2 className='text-xl font-bold pt-8 pb-3.5 text-center'>Contacts</h2>
 			</div>
