@@ -85,16 +85,16 @@ const Nav = () => {
 			/>
 			{!isActive && visible && (
 				<button
-					className='md:hidden'
+					className='md:fixed sm:top-[94svh] sm:right-1lh lg:right-[2.3lh] lg:top-[88.5svh]'
 					onClick={goTop}
 				>
 					<Image
-						className='mx-auto'
 						src={toTopIcon}
 						alt='To Top'
 						height={32}
 						width={32}
-					/>
+						className='mx-auto lg:w-1lh'
+						/>
 				</button>
 			)}
 			<button
