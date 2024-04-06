@@ -8,10 +8,14 @@ const ToolChain = () => {
 			id='ToolChain'
 		>
 			<div>
-				<h2 className='text-xl font-bold pt-0.25lh pb-1lh text-center'>ToolChain</h2>
-				<p className='text-base text-center pb-1lh'>Featuring my Daily Drivers</p>
+				<h2 className='text-xl font-bold pt-0.25lh pb-1lh text-center'>
+					ToolChain
+				</h2>
+				<p className='text-base text-center pb-1lh'>
+					Featuring my Daily Drivers
+				</p>
 			</div>
-			<div className='space-y-2lh lg:flex lg:justify-between lg:max-w-7xl lg:space-y-0'>
+			<div className='space-y-2lh sm:!space-y-1lh lg:flex lg:justify-between lg:max-w-7xl'>
 				<div className='space-y-1lh'>
 					<h3 className='font-semibold text-lg text-center'>Web Development</h3>
 					<ol className='list-disc list-inside'>
@@ -30,7 +34,7 @@ const ToolChain = () => {
 				</div>
 				<div className='space-y-1lh'>
 					<div className='space-y-1lh'>
-						<h3 className='font-semibold text-lg text-center'>
+						<h3 className='font-semibold text-lg text-center sm:pt-0.75lh'>
 							Design & Prototyping
 						</h3>
 						<ol className='list-disc list-inside'>
@@ -42,7 +46,7 @@ const ToolChain = () => {
 						</ol>
 					</div>
 					<div className='space-y-1lh'>
-						<h3 className='font-semibold text-lg text-center'>
+						<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh]'>
 							Tools and Workflow
 						</h3>
 						<ol className='list-disc list-inside'>
@@ -57,7 +61,7 @@ const ToolChain = () => {
 				</div>
 				<div className='space-y-1lh'>
 					<div className='space-y-1lh'>
-						<h3 className='font-semibold text-lg text-center'>
+						<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh]'>
 							Additional Skills
 						</h3>
 						<ol className='list-disc list-inside'>
@@ -69,7 +73,7 @@ const ToolChain = () => {
 						</ol>
 					</div>
 					<div className='space-y-1lh'>
-						<h3 className='font-semibold text-lg text-center'>
+						<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh]'>
 							Mobile Development
 						</h3>
 						<ol className='list-disc list-inside'>
@@ -81,7 +85,9 @@ const ToolChain = () => {
 			</div>
 			<div className='sm:max-w-7xl lg:text-center'>
 				<div className='space-y-1lh'>
-					<h3 className='font-semibold text-lg text-center'>Languages</h3>
+					<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh]'>
+						Languages
+					</h3>
 					<div className='relative'>
 						<ol className='list-disc list-inside lg:flex lg:justify-between'>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
@@ -92,7 +98,6 @@ const ToolChain = () => {
 							<li>C</li>
 							<li>C++</li>
 							<li>HTML</li>
-							<li>JS</li>
 							<li>TS</li>
 						</ol>
 						<Image
@@ -100,7 +105,7 @@ const ToolChain = () => {
 							height={75}
 							width={75}
 							alt='scroll down further'
-							className='absolute -bottom-1/2 md:-bottom-1/4 right-0 -scale-x-100 lg:top-4 lg:-right-8'
+							className='absolute -bottom-1/2 sm:-bottom-4lh right-0 -scale-x-100 lg:top-4 lg:-right-8 '
 						/>
 					</div>
 				</div>

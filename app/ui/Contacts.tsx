@@ -5,14 +5,14 @@ import Clock from './components/Clock';
 const Contacts = () => {
 	return (
 		<section
-			className='space-y-2lh max-w-7xl sm:space-y-8'
+			className='space-y-2lh max-w-7xl'
 			id='Contacts'
 		>
 			<div>
-				<h2 className='text-xl font-bold pt-1lh pb-0.125lh text-center'>Contacts</h2>
+				<h2 className='text-xl font-bold pt-1lh pb-0.125lh text-center sm:pt-0 sm:-mt-0.125lh sm:pb-[0.1lh]' >Contacts</h2>
 			</div>
-			<div className=' sm:flex sm:flex-row-reverse sm:max-w-7xl  sm:justify-evenly sm:gap-20'>
-				<div className='space-y-1lh sm:space-y-4'>
+			<div className=' sm:flex sm:flex-row-reverse sm:max-w-7xl  sm:justify-between sm:gap-1lh'>
+				<div className='space-y-1lh sm:space-y-1lh'>
 					<div className='sm:space-y-0'>
 						<h3 className='font-semibold text-lg'>Officials</h3>
 						<ul>
@@ -93,13 +93,13 @@ const Contacts = () => {
 						alt='Dan with his coffee'
 						height={150}
 						width={150}
-						className='mx-auto w-7lh pt-2lh sm:w-52 h-full'
+						className='mx-auto w-7lh pt-2lh sm:w-6lh h-full'
 					/>
 				</div>
 			</div>
-			<div className=' sm:space-y-0 pt-0.5lh'>
+			<div className=' sm:space-y-0 pt-0.75lh'>
 				<h3 className='font-semibold text-lg text-center pt-0.125lh'>Note</h3>
-				<p className='text-base text-center pt-0.125lh'>
+				<p className='text-base text-center pt-0.125lh '>
 					{
 						"Don't worry if I'm not immediately available—I'll swing back to you as quick as a page reload!"
 					}

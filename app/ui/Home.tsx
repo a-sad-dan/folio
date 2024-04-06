@@ -6,12 +6,12 @@ import scrollDown from '@/app/assets/scroll-down.svg';
 const Home = () => {
 	return (
 		<section
-			className='md:pt-20 space-y-1lh sm:space-y-10'
+			className='space-y-1lh sm:pt-3lh mt-0.5lh'
 			id='Home'
 		>
-			<h2 className='text-xl font-bold pt-8 pb-0.75lh text-center sm:pt-12'>{`{a-sad:Dan}`}</h2>
-			<div className='space-y-1lh sm:flex sm:gap-10'>
-				<div className='space-y-0.125lh sm:space-y-5'>
+			<h2 className='text-xl font-bold pt-2lh pb-0.125lh text-center sm:pt-0.5lh'>{`{a-sad:Dan}`}</h2>
+			<div className='space-y-1lh pt-1lh'>
+				<div className='space-y-0.125lh sm:space-y-0lh'>
 					<h3 className='font-semibold text-lg'>Who am I?</h3>
 					<p className=''>
 						Developer and a <span className='underline'>forced to be</span> UI
@@ -19,24 +19,24 @@ const Home = () => {
 						Crafting Seamless Experiences.
 					</p>
 				</div>
-				<div className='pt-0.75lh pb-1lh mx-auto relative w-max'>
+				<div className='pt-0.75lh pb-1lh mx-auto relative w-max sm:py-1.5lh'>
 					<Image
 						src={laptopDan}
 						alt='Dan with his poopie laptop'
 						height={195}
 						width={168}
-						className='w-7lh'
+						className='w-7lh sm:w-8lh sm:mb-0.5lh'
 					/>
 					<Image
 						src={danPointer}
 						alt='Dan pointer'
 						height={100}
 						width={100}
-						className='absolute top-1/4 -right-1/4'
+						className='absolute top-1/4 -right-3lh sm:top-3lh sm:w-4lh sm:-right-4lh'
 					/>
 				</div>
 			</div>
-			<div className='space-y-0.125lh sm:space-y-5'>
+			<div className='space-y-0.125lh sm:space-y-0lh'>
 				<h3 className='font-semibold text-lg'>What do I do?</h3>
 				<div className='relative'>
 					<p>
@@ -49,7 +49,7 @@ const Home = () => {
 						alt='Dan pointer'
 						height={75}
 						width={75}
-						className='absolute  right-0 -bottom-3/4'
+						className='absolute  right-0 -bottom-5lh sm:top-2.5lh sm:-right-1lh sm:w-3lh'
 					/>
 				</div>
 			</div>

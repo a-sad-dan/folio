@@ -49,7 +49,7 @@ const Nav = () => {
 			{
 				<ul
 					className={clsx(
-						'space-y-[10px] text-lg font-medium w-max hidden md:!flex md:items-center md:w-full md:space-y-0 md:justify-between md:max-w-7xl md:px-2 md:mx-auto md:py-3.5',
+						'space-y-[10px] text-lg font-medium w-max hidden md:!flex md:items-center md:w-full md:space-y-0 md:justify-between md:max-w-7xl sm:mx-auto sm:py-0.25lh sm:sm:px-1lh',
 						{ '!block': isActive }
 					)}
 				>

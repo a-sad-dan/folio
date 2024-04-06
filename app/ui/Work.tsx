@@ -7,12 +7,14 @@ import calculator from '@/app/assets/mockups/calculator-green.png';
 const Work = () => {
 	return (
 		<section
-			className='space-y-8 mx-auto max-w-7xl pb-0.125lh'
+			className='space-y-1.5lh mx-auto max-w-7xl pb-0.125lh sm:pb-0'
 			id='Work'
 		>
 			<div>
-				<h2 className='text-xl font-bold pb-1lh pt-0.75lh text-center'>Work</h2>
-				<p className='text-base text-center'>Selected Works</p>
+				<h2 className='text-xl font-bold pb-1lh pt-0.75lh text-center sm:pb-1.lh'>
+					Work
+				</h2>
+				<p className='text-base text-center sm:pt-0.25lh'>Selected Works</p>
 			</div>
 			<div className='space-y-2lh sm:space-y-0 sm:flex sm:gap-20  sm:max-w-7xl sm:flex-wrap'>
 				<WorkCard
