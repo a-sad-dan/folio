@@ -9,7 +9,7 @@ export default function Page() {
 	return (
 		<>
 			<Nav />
-			<main className='px-6 space-y-16 md:max-w-7xl md:mx-auto'>
+			<main className='px-6 space-y-4lh sm:max-w-7xl sm:mx-auto sm:overflow-clip'>
 				<Home />
 				<Work />
 				<ToolChain />

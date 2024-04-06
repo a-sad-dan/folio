@@ -6,17 +6,20 @@ import calculator from '@/app/assets/mockups/calculator-green.png';
 
 const Work = () => {
 	return (
-		<section className='space-y-8 mx-auto w-max' id='Work'>
+		<section
+			className='space-y-8 mx-auto max-w-7xl pb-0.125lh'
+			id='Work'
+		>
 			<div>
-				<h2 className='text-xl font-bold pt-8 pb-3.5 text-center'>Work</h2>
+				<h2 className='text-xl font-bold pb-1lh pt-0.75lh text-center'>Work</h2>
 				<p className='text-base text-center'>Selected Works</p>
 			</div>
-			<div className='space-y-8 sm:space-y-0 sm:flex sm:gap-8 sm:flex-wrap sm:'>
+			<div className='space-y-2lh sm:space-y-0 sm:flex sm:gap-20  sm:max-w-7xl sm:flex-wrap'>
 				<WorkCard
 					name='MinimaList'
 					date='16/01/2024'
-				liveLink='https://a-sad-dan.github.io/minima-List/'
-				photo={minimalist}
+					liveLink='https://a-sad-dan.github.io/minima-List/'
+					photo={minimalist}
 				/>
 				<WorkCard
 					name='Top Realty'
@@ -24,11 +27,11 @@ const Work = () => {
 					liveLink='https://toprealtymumbai.com'
 					photo={topRealty}
 				/>
-				<WorkCard 
-				name='WeatherNaut'
-				date='19/11/23'
-				liveLink='https://a-sad-dan.github.io/weatherNaut'
-				photo={weatherNaut}
+				<WorkCard
+					name='WeatherNaut'
+					date='19/11/23'
+					liveLink='https://a-sad-dan.github.io/weatherNaut'
+					photo={weatherNaut}
 				/>
 				<WorkCard
 					name='Calculator'
@@ -36,8 +39,7 @@ const Work = () => {
 					liveLink='https://a-sad-dan.github.io/Calculator/'
 					photo={calculator}
 				/>
-				<WorkCard
-				/>
+				<WorkCard />
 			</div>
 		</section>
 	);

@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 import toTopIcon from '@/app/assets/Top.svg';
 import openMenu from '@/app/assets/open-Menu.svg';
 import closeMenu from '@/app/assets/close.svg';
-import Link from 'next/link';
 
 const Nav = () => {
 	const [isActive, setIsActive] = useState(false);
@@ -43,7 +42,7 @@ const Nav = () => {
 	return (
 		<nav
 			className={clsx(
-				' bg-background/70 backdrop-blur-[2px] fixed bottom-0 left-0 w-full py-2 px-6 flex justify-between md:top-0 md:bottom-auto z-10',
+				' bg-background/70 backdrop-blur-[2px] fixed bottom-0 left-0 w-full sm:!w-screen py-2 px-6 flex justify-between md:top-0 md:bottom-auto z-10',
 				{ 'flex p-6 pt-7': isActive }
 			)}
 		>
