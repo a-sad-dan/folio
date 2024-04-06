@@ -18,7 +18,7 @@ const WorkCard = ({ liveLink, name, date, photo }: WorkCardProps) => {
 		'https://www.youtube.com/watch?v=l4ezx3omYeA&pp=ygUfaG93IGEgcG9scm9pZCBmaWxtIGlzIGRldmVsb3BlZA%3D%3D';
 
 	return (
-		<div className='mx-auto relative'>
+		<div className='mx-auto relative w-min'>
 			{/* <Image
 				src={dirtyTexture}
 				alt='dirtyTexture'
