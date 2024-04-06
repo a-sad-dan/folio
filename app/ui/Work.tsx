@@ -4,10 +4,13 @@ import topRealty from '@/app/assets/mockups/top-realty.png';
 import weatherNaut from '@/app/assets/mockups/weathernaut.png';
 import calculator from '@/app/assets/mockups/calculator-green.png';
 
+import scrollDown2 from '@/app/assets/scroll-down-2.svg';
+import Image from 'next/image';
+
 const Work = () => {
 	return (
 		<section
-			className='space-y-1.5lh mx-auto max-w-7xl pb-0.125lh sm:pb-0'
+			className='space-y-1.5lh mx-auto max-w-7xl pb-0.125lh sm:pb-0 relative'
 			id='Work'
 		>
 			<div>
@@ -43,6 +46,13 @@ const Work = () => {
 				/>
 				<WorkCard />
 			</div>
+			<Image
+				src={scrollDown2}
+				alt='Scroll Down'
+				height={100}
+				width={64}
+				className='absolute -bottom-4lh lg:w-16'
+			/>
 		</section>
 	);
 };
