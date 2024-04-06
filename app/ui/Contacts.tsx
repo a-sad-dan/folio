@@ -5,15 +5,15 @@ import Clock from './components/Clock';
 const Contacts = () => {
 	return (
 		<section
-			className='space-y-2lh max-w-7xl'
+			className='space-y-2lh max-w-7xl lg:pt-0.125lh lg:space-y-2lh'
 			id='Contacts'
 		>
 			<div>
-				<h2 className='text-xl font-bold pt-1lh pb-0.125lh text-center sm:pt-0 sm:-mt-0.125lh sm:pb-[0.1lh]' >Contacts</h2>
+				<h2 className='text-xl font-bold pt-1lh pb-0.25lh text-center sm:pt-0 sm:-mt-0.125lh sm:pb-[0.1lh]' >Contacts</h2>
 			</div>
-			<div className=' sm:flex sm:flex-row-reverse sm:max-w-7xl  sm:justify-between sm:gap-1lh'>
-				<div className='space-y-1lh sm:space-y-1lh'>
-					<div className='sm:space-y-0'>
+			<div className=' sm:flex sm:flex-row-reverse sm:max-w-7xl  sm:justify-center sm:gap-4lh'>
+				<div className='space-y-1lh '>
+					<div className=''>
 						<h3 className='font-semibold text-lg'>Officials</h3>
 						<ul>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
@@ -40,7 +40,7 @@ const Contacts = () => {
 							</li>
 						</ul>
 					</div>
-					<div className='sm:space-y-0'>
+					<div className=''>
 						<h3 className='font-semibold text-lg'>Socials</h3>
 						<ul>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
@@ -68,7 +68,7 @@ const Contacts = () => {
 							</li>
 						</ul>
 					</div>
-					<div className='sm:space-y-0'>
+					<div className=''>
 						<h3 className='font-semibold text-lg'>Location</h3>
 						<ul>
 							<li>Based in New Delhi, India.</li>
@@ -77,7 +77,7 @@ const Contacts = () => {
 							</li>
 						</ul>
 					</div>
-					<div className='sm:space-y-0'>
+					<div className=''>
 						<h3 className='font-semibold text-lg'>Availability</h3>
 						<p>
 							<span className='bg-accent text-background font-bold px-1 py-0.5 underline'>
@@ -97,7 +97,7 @@ const Contacts = () => {
 					/>
 				</div>
 			</div>
-			<div className=' sm:space-y-0 pt-0.75lh'>
+			<div className='  pt-0.75lh'>
 				<h3 className='font-semibold text-lg text-center pt-0.125lh'>Note</h3>
 				<p className='text-base text-center pt-0.125lh '>
 					{

@@ -8,17 +8,17 @@ const ToolChain = () => {
 			id='ToolChain'
 		>
 			<div>
-				<h2 className='text-xl font-bold pt-0.25lh pb-1lh text-center'>
+				<h2 className='text-xl font-bold pt-0.25lh pb-1lh text-center lg:pt-0.5lh'>
 					ToolChain
 				</h2>
 				<p className='text-base text-center pb-1lh'>
 					Featuring my Daily Drivers
 				</p>
 			</div>
-			<div className='space-y-2lh sm:!space-y-1lh lg:flex lg:justify-between lg:max-w-7xl'>
-				<div className='space-y-1lh'>
+			<div className='space-y-2lh sm:!space-y-1lh lg:flex lg:justify-between lg:max-w-7xl lg:!space-y-0'>
+				<div className='space-y-1lh '>
 					<h3 className='font-semibold text-lg text-center'>Web Development</h3>
-					<ol className='list-disc list-inside'>
+					<ol className='list-disc list-inside space-y-1lh lg:list-decimal'>
 						{/* //todo - import these from a DB/data.js  and eventually from Database*/}
 						<li>React</li>
 						<li>Next Js</li>
@@ -32,12 +32,12 @@ const ToolChain = () => {
 						<li>Elementor</li>
 					</ol>
 				</div>
-				<div className='space-y-1lh'>
+				<div className='space-y-1lh '>
 					<div className='space-y-1lh'>
-						<h3 className='font-semibold text-lg text-center sm:pt-0.75lh'>
+						<h3 className='font-semibold text-lg text-center sm:pt-0.75lh lg:pt-0'>
 							Design & Prototyping
 						</h3>
-						<ol className='list-disc list-inside'>
+						<ol className='list-disc list-inside space-y-1lh lg:list-decimal'>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
 							<li>Blender</li>
 							<li>Figma</li>
@@ -49,7 +49,7 @@ const ToolChain = () => {
 						<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh]'>
 							Tools and Workflow
 						</h3>
-						<ol className='list-disc list-inside'>
+						<ol className='list-disc list-inside space-y-1lh lg:list-decimal'>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
 							<li>VsCode</li>
 							<li>Vim</li>
@@ -61,10 +61,10 @@ const ToolChain = () => {
 				</div>
 				<div className='space-y-1lh'>
 					<div className='space-y-1lh'>
-						<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh]'>
+						<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh] lg:pt-0'>
 							Additional Skills
 						</h3>
-						<ol className='list-disc list-inside'>
+						<ol className='list-disc list-inside space-y-1lh lg:list-decimal'>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
 							<li>DSA</li>
 							<li>OOPS</li>
@@ -76,7 +76,7 @@ const ToolChain = () => {
 						<h3 className='font-semibold text-lg text-center sm:pt-[0.95lh]'>
 							Mobile Development
 						</h3>
-						<ol className='list-disc list-inside'>
+						<ol className='list-disc list-inside space-y-1lh lg:list-decimal'>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
 							<li>React Native</li>
 						</ol>
@@ -89,7 +89,7 @@ const ToolChain = () => {
 						Languages
 					</h3>
 					<div className='relative'>
-						<ol className='list-disc list-inside lg:flex lg:justify-between'>
+						<ol className='list-disc list-inside space-y-1lh lg:space-y-0 lg:flex lg:justify-between lg:list-none'>
 							{/* //todo - import these from a DB/data.js  and eventually from Database*/}
 							<li>Assembly 💀</li>
 							<li>MATLAB / GNU Octave</li>
