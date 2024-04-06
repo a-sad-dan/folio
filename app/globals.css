@@ -8,6 +8,7 @@
 	--background-end-rgb: 255, 255, 255;
 	scroll-behavior: smooth;
 	font-size: 16px;
+	box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,19 +35,19 @@ body {
 	}
 
 	body {
-		background-size: 36px;
-		line-height: 36px;
+		background-size: 30px;
+		line-height: 30px;
 	}
 }
 
 @media (min-width: 1024px) {
 	:root {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	body {
-		background-size: 48px;
-		line-height: 48px;
+		background-size: 36px;
+		line-height: 36px;
 	}
 }
 
