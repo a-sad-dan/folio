@@ -31,24 +31,40 @@ const config: Config = {
 			semibold: '600',
 			bold: '700',
 		},
-	},
-	extend: {
-		keyframes: {
-			slideIn: {
-				from: {
-					transform: 'translateY(-100%)',
+		extend: {
+			keyframes: {
+				slideIn: {
+					from: {
+						transform: 'translateY(-100%)',
+					},
+					to: {
+						transform: 'translateY(0)',
+					},
 				},
-				to: {
-					transform: 'translateY(0)',
+				slideOut: {
+					from: {
+						transform: 'translateY(0)',
+					},
+					to: {
+						transform: 'translateY(-100%)',
+					},
 				},
 			},
-			slideOut: {
-				from: {
-					transform: 'translateY(0)',
-				},
-				to: {
-					transform: 'translateY(-100%)',
-				},
+			spacing: {
+				'0.125lh': '0.125lh',
+				'0.25lh': '0.25lh',
+				'0.5lh': '0.5lh',
+				'0.75lh': '0.75lh',
+				'1lh': '1lh',
+				'1.5lh': '1.5lh',
+				'2lh': '2lh',
+				'2.5lh': '2.5lh',
+				'3lh': '3lh',
+				'4lh': '4lh',
+				'5lh': '5lh',
+				'6lh': '6lh',
+				'7lh': '7lh',
+				'8lh': '8lh',
 			},
 		},
 	},
