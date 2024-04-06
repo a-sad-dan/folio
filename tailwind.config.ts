@@ -35,7 +35,7 @@ const config: Config = {
 			keyframes: {
 				slideIn: {
 					from: {
-						transform: 'translateY(-100%)',
+						transform: 'translateY(100%)',
 					},
 					to: {
 						transform: 'translateY(0)',
@@ -46,9 +46,13 @@ const config: Config = {
 						transform: 'translateY(0)',
 					},
 					to: {
-						transform: 'translateY(-100%)',
+						transform: 'translateY(100%)',
 					},
 				},
+			},
+			animation: {
+				slideIn: 'slideIn 0.5s ease-out',
+				slideOut: 'slideOut 0.5s ease-in-out',
 			},
 			spacing: {
 				'0.125lh': '0.125lh',

@@ -42,14 +42,14 @@ const Nav = () => {
 	return (
 		<nav
 			className={clsx(
-				' bg-background/70 backdrop-blur-[2px] fixed bottom-0 left-0 w-full sm:!w-screen py-2 px-6 flex justify-between md:top-0 md:bottom-auto z-10',
-				{ 'flex p-6 pt-7': isActive }
+				' bg-background/70 backdrop-blur-[2px] fixed bottom-0 left-0 w-full sm:!w-screen py-2 px-6 flex justify-between md:top-0 md:bottom-auto z-10 ',
+				{ 'flex p-6 pt-7 animate-slideIn': isActive },
 			)}
 		>
 			{
 				<ul
 					className={clsx(
-						'space-y-[10px] text-lg font-medium w-max hidden lg:!px-3lh md:!px-2lh md:!flex md:items-center md:w-full md:space-y-0 md:justify-between md:!max-w-7xl sm:mx-auto sm:py-0.25lh sm:sm:px-1lh lg:w-4/5 ',
+						'space-y-[10px] text-lg font-medium w-max hidden lg:!px-3lh md:!px-2lh md:!flex md:items-center md:w-full md:space-y-0 md:justify-between md:!max-w-7xl sm:mx-auto sm:py-0.25lh sm:sm:px-1lh lg:w-4/5',
 						{ '!block': isActive }
 					)}
 				>
@@ -94,7 +94,7 @@ const Nav = () => {
 						height={32}
 						width={32}
 						className='mx-auto lg:w-1lh'
-						/>
+					/>
 				</button>
 			)}
 			<button
