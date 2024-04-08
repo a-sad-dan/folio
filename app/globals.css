@@ -9,14 +9,14 @@
 	scroll-behavior: smooth;
 	font-size: 16px;
 	box-sizing: border-box;
+	/* To remove auto dark mode */
+	color-scheme: only light;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-		scroll-behavior: smooth;
+		background-color: '#fffffc';
+		color: '#120e07';
 	}
 }
 
