@@ -21,9 +21,10 @@ const Work = () => {
 			</div>
 			<div className='space-y-2lh sm:space-y-0 sm:flex sm:gap-20  sm:max-w-7xl sm:flex-wrap'>
 				<WorkCard
-					name='MinimaList'
+					name='MinimaList'	
 					date='16/01/2024'
 					liveLink='https://a-sad-dan.github.io/minima-List/'
+					sourceLink='https://github.com/a-sad-dan/minima-List'
 					photo={minimalist}
 				/>
 				<WorkCard
@@ -36,12 +37,14 @@ const Work = () => {
 					name='WeatherNaut'
 					date='19/11/23'
 					liveLink='https://a-sad-dan.github.io/weatherNaut'
+					sourceLink='https://github.com/a-sad-dan/weatherNaut'
 					photo={weatherNaut}
 				/>
 				<WorkCard
 					name='Calculator'
 					date='09/07/2023'
 					liveLink='https://a-sad-dan.github.io/Calculator/'
+					sourceLink='https://github.com/a-sad-dan/Calculator'
 					photo={calculator}
 				/>
 				<WorkCard />
